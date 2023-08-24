@@ -1,431 +1,534 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <title>giarddesign</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header
+      class="flex max-w-[1262px] mx-auto min-h-[80px] justify-between items-center max-[1400px]:px-4"
+    >
+      <img src="assets/giarddesign-black.svg" alt="giard design logo" />
+      <nav class="nav">
+        <ul class="flex flex-wrap">
+          <li class="relative">
+            <button class="flex items-center" id="nav-btn-offer">
+              Oferta
+              <img class="ml-1" src="assets/chevron-icon.svg" alt="" />
+            </button>
+            <div
+              id="offer-dropdown"
+              class="absolute bottom-0 translate-y-full left-1/2 -translate-x-1/2 z-10 p-5 hidden bg-white rounded-md w-max"
+            >
+              <ul>
+                <li>
+                  <a
+                    class="block py-3 rounded-md hover:bg-gray transition-colors duration-300"
+                    href="#offer"
+                  >
+                    <div class="flex items-center">
+                      <img class="w-4 mr-3" src="assets/pen-icon.png" alt="" />
+                      <p>Projekt</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="block py-3 rounded-md hover:bg-gray transition-colors duration-300"
+                    href="#offer"
+                  >
+                    <div class="flex items-center">
+                      <img class="w-4 mr-3" src="assets/eye-icon.png" alt="" />
+                      <p>Wizualizacja</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="block py-3 rounded-md hover:bg-gray transition-colors duration-300"
+                    href="#offer"
+                  >
+                    <div class="flex items-center">
+                      <img class="w-4 mr-3" src="assets/stars-icon.png" alt="" />
+                      <p>Realizacja</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="text-base ml-12"><a href="#about-company">O firmie</a></li>
+          <li class="text-base ml-12"><a href="#projects">Realizacje</a></li>
+          <li class="text-base ml-12"><a href="#footer">Kontakt</a></li>
+          <li class="ml-12">
+            <button><img src="assets/search-icon.svg" alt="" /></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-  <title>giarddesign</title>
-</head>
+    <!-- INTRO -->
+    <section id="intro" class="swiper relative">
+      <div class="swiper-wrapper">
+        <!-- slide 1 -->
+        <div
+          class="swiper-slide !flex min-h-[737px] mx-auto bg-beige items-center max-[800px]:flex-wrap"
+        >
+          <div class="basis-1/2 max-[800px]:basis-full">
+            <div
+              class="max-w-[631px] ml-auto max-[800px]:py-10 max-[1400px]:px-4 max-[800px]:mx-auto max-[800px]:text-center"
+            >
+              <h1
+                class="text-6xl font-medium mb-11 max-w-lg font-headline max-[650px]:text-3xl max-[650px]:font-semibold max-[650px]:mb-5 max-[800px]:mx-auto"
+              >
+                Nowoczesna aranżacja Twojego ogrodu
+              </h1>
+              <p
+                class="mb-16 max-w-md max-[650px]:mb-8 max-[800px]:mx-auto max-[800px]:text-justify"
+              >
+                Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji.
+                Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.
+              </p>
+              <div class="flex gap-x-9 gap-y-4 flex-wrap max-[800px]:justify-center">
+                <button class="btn-fill shrink-0">Skontaktuj się z nami</button>
+                <button class="btn-icon shrink-0">
+                  Zobacz nasze realizacje
+                  <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="basis-1/2 relative h-[737px] bg-[url('assets/intro.jpg')] bg-no-repeat bg-cover bg-center max-[800px]:basis-full"
+          ></div>
+        </div>
+        <!-- slide 2 -->
+        <div
+          class="swiper-slide !flex min-h-[737px] mx-auto bg-beige items-center max-[800px]:flex-wrap"
+        >
+          <div class="basis-1/2 max-[800px]:basis-full">
+            <div
+              class="max-w-[631px] ml-auto max-[800px]:py-10 max-[1400px]:px-4 max-[800px]:mx-auto max-[800px]:text-center"
+            >
+              <h1
+                class="text-6xl font-medium mb-11 max-w-lg font-headline max-[650px]:text-3xl max-[650px]:font-semibold max-[650px]:mb-5 max-[800px]:mx-auto"
+              >
+                Lorem ipsum dolor sit.
+              </h1>
+              <p
+                class="mb-16 max-w-md max-[650px]:mb-8 max-[800px]:mx-auto max-[800px]:text-justify"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, magni laboriosam a
+                dolorum dolorem enim officia ut totam itaque!
+              </p>
+              <div class="flex gap-x-9 gap-y-4 flex-wrap max-[800px]:justify-center">
+                <button class="btn-fill shrink-0">Skontaktuj się z nami</button>
+                <button class="btn-icon shrink-0">
+                  Zobacz nasze realizacje
+                  <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="basis-1/2 relative h-[737px] bg-[url('assets/intro2.jpg')] bg-no-repeat bg-cover bg-center max-[800px]:basis-full"
+          ></div>
+        </div>
+        <!-- slide 3 -->
+        <div
+          class="swiper-slide !flex min-h-[737px] mx-auto bg-beige items-center max-[800px]:flex-wrap"
+        >
+          <div class="basis-1/2 max-[800px]:basis-full">
+            <div
+              class="max-w-[631px] ml-auto max-[800px]:py-10 max-[1400px]:px-4 max-[800px]:mx-auto max-[800px]:text-center"
+            >
+              <h1
+                class="text-6xl font-medium mb-11 max-w-lg font-headline max-[650px]:text-3xl max-[650px]:font-semibold max-[650px]:mb-5 max-[800px]:mx-auto"
+              >
+                Lorem ipsum dolor sit.
+              </h1>
+              <p
+                class="mb-16 max-w-md max-[650px]:mb-8 max-[800px]:mx-auto max-[800px]:text-justify"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi temporibus at
+                nihil distinctio explicabo tempore culpa fuga consequatur.
+              </p>
+              <div class="flex gap-x-9 gap-y-4 flex-wrap max-[800px]:justify-center">
+                <button class="btn-fill shrink-0">Skontaktuj się z nami</button>
+                <button class="btn-icon shrink-0">
+                  Zobacz nasze realizacje
+                  <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="basis-1/2 relative h-[737px] bg-[url('assets/intro3.jpg')] bg-no-repeat bg-cover bg-center max-[800px]:basis-full"
+          ></div>
+        </div>
+      </div>
 
-<body>
-  <!-- NAVIGATION -->
-  <header class="flex max-w-[1262px] mx-auto min-h-[80px] justify-between items-center max-[1400px]:px-4">
-    <img src="assets/giarddesign-black.svg" alt="giard design logo" />
-    <nav class="nav">
-      <ul class="flex flex-wrap">
-        <li class="relative">
-          <button class="flex items-center" id="nav-btn-offer">
-            Oferta
-            <img class="ml-1" src="assets/chevron-icon.svg" alt="" />
+      <!-- navigation -->
+      <div class="bg-white flex absolute bottom-0 right-0 z-10">
+        <button class="swiper-prev py-6 pl-8 pr-4">
+          <img src="assets/arrow-left-icon.svg" alt="" />
+        </button>
+        <button class="swiper-next pl-4 pr-8">
+          <img src="assets/arrow-right-icon.svg" alt="" />
+        </button>
+      </div>
+    </section>
+
+    <!-- OFFER -->
+    <section
+      id="offer"
+      class="bg-gray pt-36 pb-40 max-[1400px]:px-4 max-[800px]:py-10 max-[650px]:mb-5"
+    >
+      <div class="max-w-[1040px] mx-auto">
+        <div class="max-w-[709px] max-[1200px]:mx-auto">
+          <h2 class="text-green text-xs mb-4">Oferta</h2>
+
+          <p
+            class="text-5xl font-headline font-medium italic mb-8 max-[650px]:text-3xl max-[650px]:font-semibold max-[650px]:mb-5"
+          >
+            Działamy kompleksowo
+          </p>
+
+          <p class="text-base pb-40 max-[800px]:pb-10 max-[800px]:text-justify">
+            Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody
+            przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i
+            wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="max-w-[1262px] mx-auto flex justify-center gap-16 max-[1300px]:gap-6 max-[1050px]:flex-wrap max-[1050px]:gap-3"
+      >
+        <a
+          href="#projects"
+          class="block px-10 py-12 rounded-3xl bg-white hover:shadow-2xl transition hover:scale-105 duration-300 max-[600px]:basis-[100%] max-[1050px]:basis-[48%]"
+        >
+          <div class="w-12 h-11 mb-8 flex justify-center items-center">
+            <img class="w-full" src="assets/pen-icon.png" alt="" />
+          </div>
+          <h3 class="text-xl font-headline font-medium mb-3">Projekty</h3>
+          <p class="mb-16 text-sm">
+            Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
+            przestrzeni.
+          </p>
+          <button class="btn-line">
+            Dowiedz się więcej <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
           </button>
-          <div id="offer-dropdown"
-            class="absolute bottom-0 translate-y-full left-1/2 -translate-x-1/2 z-10 p-5 hidden bg-white rounded-md w-max">
-            <ul>
-              <li>
-                <a class="block py-3 rounded-md hover:bg-gray transition-colors duration-300" href="#offer">
-                  <div class="flex items-center">
-                    <img class="w-4 mr-3" src="assets/pen-icon.png" alt="" />
-                    <p>Projekt</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="block py-3 rounded-md hover:bg-gray transition-colors duration-300" href="#offer">
-                  <div class="flex items-center">
-                    <img class="w-4 mr-3" src="assets/eye-icon.png" alt="" />
-                    <p>Wizualizacja</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="block py-3 rounded-md hover:bg-gray transition-colors duration-300" href="#offer">
-                  <div class="flex items-center">
-                    <img class="w-4 mr-3" src="assets/stars-icon.png" alt="" />
-                    <p>Realizacja</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="text-base ml-12"><a href="#about-company">O firmie</a></li>
-        <li class="text-base ml-12"><a href="#projects">Realizacje</a></li>
-        <li class="text-base ml-12"><a href="#footer">Kontakt</a></li>
-        <li class="ml-12">
-          <button><img src="assets/search-icon.svg" alt="" /></button>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        </a>
 
-  <!-- INTRO -->
-  <section id="intro" class="swiper relative">
-    <div class="swiper-wrapper">
-      <!-- slide 1 -->
-      <div class="swiper-slide !flex min-h-[737px] mx-auto bg-beige items-center max-[800px]:flex-wrap">
-        <div class="basis-1/2 max-[800px]:basis-full">
-          <div
-            class="max-w-[631px] ml-auto max-[800px]:py-10 max-[1400px]:px-4 max-[800px]:mx-auto max-[800px]:text-center">
-            <h1
-              class="text-6xl font-medium mb-11 max-w-lg font-headline max-[650px]:text-3xl max-[650px]:font-semibold max-[650px]:mb-5 max-[800px]:mx-auto">
-              Nowoczesna aranżacja Twojego ogrodu
-            </h1>
-            <p class="mb-16 max-w-md max-[650px]:mb-8 max-[800px]:mx-auto">
-              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji.
-              Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.
-            </p>
-            <div class="flex gap-x-9 gap-y-4 flex-wrap max-[800px]:justify-center">
-              <button class="btn-fill shrink-0">Skontaktuj się z nami</button>
-              <button class="btn-icon shrink-0">
-                Zobacz nasze realizacje
-                <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
-              </button>
-            </div>
+        <a
+          href="#projects"
+          class="block px-10 py-12 rounded-3xl bg-white hover:shadow-2xl transition hover:scale-105 duration-300 max-[600px]:basis-[100%] max-[1050px]:basis-[48%]"
+        >
+          <div class="w-12 h-11 mb-8 flex justify-center items-center">
+            <img class="w-full" src="assets/eye-icon.png" alt="" />
           </div>
-        </div>
-        <div
-          class="basis-1/2 relative h-[737px] bg-[url('assets/intro.jpg')] bg-no-repeat bg-cover bg-center max-[800px]:basis-full">
-        </div>
-      </div>
-      <!-- slide 2 -->
-      <div class="swiper-slide !flex min-h-[737px] mx-auto bg-beige items-center max-[800px]:flex-wrap">
-        <div class="basis-1/2 max-[800px]:basis-full">
-          <div
-            class="max-w-[631px] ml-auto max-[800px]:py-10 max-[1400px]:px-4 max-[800px]:mx-auto max-[800px]:text-center">
-            <h1
-              class="text-6xl font-medium mb-11 max-w-lg font-headline max-[650px]:text-3xl max-[650px]:font-semibold max-[650px]:mb-5 max-[800px]:mx-auto">
-              Lorem ipsum dolor sit.
-            </h1>
-            <p class="mb-16 max-w-md max-[650px]:mb-8 max-[800px]:mx-auto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, magni laboriosam a
-              dolorum dolorem enim officia ut totam itaque!
-            </p>
-            <div class="flex gap-x-9 gap-y-4 flex-wrap max-[800px]:justify-center">
-              <button class="btn-fill shrink-0">Skontaktuj się z nami</button>
-              <button class="btn-icon shrink-0">
-                Zobacz nasze realizacje
-                <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="basis-1/2 relative h-[737px] bg-[url('assets/intro2.jpg')] bg-no-repeat bg-cover bg-center max-[800px]:basis-full">
-        </div>
-      </div>
-      <!-- slide 3 -->
-      <div class="swiper-slide !flex min-h-[737px] mx-auto bg-beige items-center max-[800px]:flex-wrap">
-        <div class="basis-1/2 max-[800px]:basis-full">
-          <div
-            class="max-w-[631px] ml-auto max-[800px]:py-10 max-[1400px]:px-4 max-[800px]:mx-auto max-[800px]:text-center">
-            <h1
-              class="text-6xl font-medium mb-11 max-w-lg font-headline max-[650px]:text-3xl max-[650px]:font-semibold max-[650px]:mb-5 max-[800px]:mx-auto">
-              Lorem ipsum dolor sit.
-            </h1>
-            <p class="mb-16 max-w-md max-[650px]:mb-8 max-[800px]:mx-auto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi temporibus at
-              nihil distinctio explicabo tempore culpa fuga consequatur.
-            </p>
-            <div class="flex gap-x-9 gap-y-4 flex-wrap max-[800px]:justify-center">
-              <button class="btn-fill shrink-0">Skontaktuj się z nami</button>
-              <button class="btn-icon shrink-0">
-                Zobacz nasze realizacje
-                <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="basis-1/2 relative h-[737px] bg-[url('assets/intro3.jpg')] bg-no-repeat bg-cover bg-center max-[800px]:basis-full">
-        </div>
-      </div>
-    </div>
+          <h3 class="text-xl font-headline font-medium mb-3">Wizualizacje</h3>
+          <p class="mb-16 text-sm">
+            Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w
+            technologii 3D.
+          </p>
+          <button class="btn-line">
+            Dowiedz się więcej <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
+          </button>
+        </a>
 
-    <!-- navigation -->
-    <div class="bg-white flex absolute bottom-0 right-0 z-10">
-      <button class="swiper-prev py-6 pl-8 pr-4">
-        <img src="assets/arrow-left-icon.svg" alt="" />
+        <a
+          href="#projects"
+          class="block px-10 py-12 rounded-3xl bg-white hover:shadow-2xl transition hover:scale-105 duration-300 max-[600px]:basis-[100%] max-[1050px]:basis-1/2"
+        >
+          <div class="w-12 h-11 mb-8 flex justify-center items-center">
+            <img class="w-full" src="assets/stars-icon.png" alt="" />
+          </div>
+          <h3 class="text-xl font-headline font-medium mb-3">Realizacje</h3>
+          <p class="mb-16 text-sm">
+            Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych
+            technologii.
+          </p>
+          <button class="btn-line">
+            Zobacz nasze realizacje <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT COMPANY -->
+    <section
+      id="about-company"
+      class="min-h-[737px] mx-auto bg-green flex items-center max-[800px]:flex-wrap"
+    >
+      <div
+        class="basis-1/2 min-h-[inherit] bg-[url('assets/about-company.png')] bg-no-repeat bg-cover bg-center max-[800px]:basis-full max-[800px]:h-[500px]"
+      ></div>
+      <div
+        class="basis-1/2 max-[800px]:flex max-[800px]:basis-full max-[800px]:items-center max-[800px]:mx-auto max-[800px]:max-w-[631px]"
+      >
+        <div class="max-w-[596px] mx-auto pl-24 text-white pr-8 max-[1000px]:pl-8 max-[800px]:py-8">
+          <h2 class="text-xs mb-4">O firmie</h2>
+
+          <p
+            class="text-5xl font-headline font-medium italic mb-10 max-[650px]:text-3xl max-[650px]:font-semibold max-[650px]:mb-5"
+          >
+            Tworzymy z pasją
+          </p>
+
+          <p class="text-base mb-16 max-[800px]:text-justify max-[800px]:mb-8">
+            Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci
+            oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta.
+            Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm,
+            geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do
+            współczesnego trybu życia.
+          </p>
+
+          <button class="btn-icon border-white text-white">
+            Poznaj nas bliżej
+            <svg
+              class="ml-2"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="fill-white"
+                id="Vector"
+                d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="pt-32 bg-beige relative max-[800px]:pt-8">
+      <div class="max-w-[1262px] mx-auto max-[1400px]:pl-4">
+        <h2 class="text-green text-xs mb-4">Realizacje</h2>
+        <p
+          class="text-5xl italic mb-24 font-headline font-medium max-[650px]:text-3xl max-[650px]:font-semibold max-[650px]:mb-8"
+        >
+          Nasze projekty
+        </p>
+      </div>
+
+      <div id="photos-container" class="photos max-h-[1475px] overflow-hidden">
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/9.png">
+          <img class="w-full" src="assets/projects-photos/9.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/8.png">
+          <img class="w-full" src="assets/projects-photos/8.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/7.png">
+          <img class="w-full" src="assets/projects-photos/7.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/6.png">
+          <img class="w-full" src="assets/projects-photos/6.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/5.png">
+          <img class="w-full" src="assets/projects-photos/5.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/4.png">
+          <img class="w-full" src="assets/projects-photos/4.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/3.png">
+          <img class="w-full" src="assets/projects-photos/3.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/2.png">
+          <img class="w-full" src="assets/projects-photos/2.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/1.png">
+          <img class="w-full" src="assets/projects-photos/1.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/9.png">
+          <img class="w-full" src="assets/projects-photos/9.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/8.png">
+          <img class="w-full" src="assets/projects-photos/8.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/7.png">
+          <img class="w-full" src="assets/projects-photos/7.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/6.png">
+          <img class="w-full" src="assets/projects-photos/6.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/5.png">
+          <img class="w-full" src="assets/projects-photos/5.png" alt="" />
+        </a>
+        <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/4.png">
+          <img class="w-full" src="assets/projects-photos/4.png" alt="" />
+        </a>
+      </div>
+
+      <div
+        id="photos-gradient"
+        class="w-full h-[1000px] absolute bottom-0 bg-gradient-to-t from-beige to-transparent pointer-events-none"
+      ></div>
+      <button
+        id="expand-btn-photos"
+        class="btn-icon absolute bottom-0 left-1/2 mb-11 border-black text-black -translate-x-1/2"
+      >
+        Rozwiń
+        <svg
+          class="fill-black ml-2"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="Vector"
+            d="M16 7.99529L15.1043 7.09959L8.63642 13.5769L8.63642 1.02988e-07L7.36358 8.78099e-08L7.36358 13.5675L0.895699 7.09959L9.54553e-08 7.99529L8.00471 16L16 7.99529Z"
+          />
+        </svg>
       </button>
-      <button class="swiper-next pl-4 pr-8">
-        <img src="assets/arrow-right-icon.svg" alt="" />
-      </button>
-    </div>
-  </section>
+    </section>
 
-  <!-- OFFER -->
-  <section id="offer" class="bg-gray pt-36 pb-40 max-[1400px]:px-4 max-[800px]:py-10 max-[650px]:mb-5">
-    <div class="max-w-[1040px] mx-auto">
-      <div class="max-w-[709px] max-[1200px]:mx-auto">
-        <h2 class="text-green text-xs mb-4">Oferta</h2>
-
-        <p class="text-5xl font-headline font-medium italic mb-8 max-[650px]:text-3xl max-[650px]:font-semibold">
-          Działamy kompleksowo
-        </p>
-
-        <p class="text-base pb-40 max-[800px]:pb-10">
-          Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody
-          przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i
-          wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
-        </p>
-      </div>
-    </div>
-
-    <div
-      class="max-w-[1262px] mx-auto flex justify-center gap-16 max-[1300px]:gap-6 max-[1050px]:flex-wrap max-[1050px]:gap-3">
-      <a href="#projects"
-        class="block px-10 py-12 rounded-3xl bg-white hover:shadow-2xl transition hover:scale-105 duration-300 max-[800px]:basis-[100%] max-[1050px]:basis-[48%]">
-        <div class="w-12 h-11 mb-8 flex justify-center items-center">
-          <img class="w-full" src="assets/pen-icon.png" alt="" />
+    <!-- INSTAGRAM -->
+    <section id="instagram" class="py-[60px] bg-gray max-[600px]:py-8">
+      <div
+        class="bg-green px-[110px] py-[120px] text-white max-w-[1040px] mx-auto flex items-center max-[750px]:flex-wrap max-[750px]:px-8 max-[750px]:py-[50px] max-[600px]:text-center"
+      >
+        <h3
+          class="font-headline text-4xl mr-16 max-[750px]:mr-0 max-[750px]:mb-8 max-[650px]:text-3xl max-[650px]:font-semibold max-[650px]:mb-5"
+        >
+          Zostańmy w kontakcie! Znajdziesz nas na
+          <span class="font-sans font-medium italic">Instagramie</span>.
+        </h3>
+        <div class="basis-[165px] shrink-0 max-[750px]:basis-full max-[750px]:text-center">
+          <p class="mb-6">Śledź nasze najnowsze realizacje!</p>
+          <button class="btn-fill bg-gray text-green">Instagram</button>
         </div>
-        <h3 class="text-xl font-headline font-medium mb-3">Projekty</h3>
-        <p class="mb-16 text-sm">
-          Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
-          przestrzeni.
-        </p>
-        <button class="btn-line">
-          Dowiedz się więcej <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
-        </button>
-      </a>
-
-      <a href="#projects"
-        class="block px-10 py-12 rounded-3xl bg-white hover:shadow-2xl transition hover:scale-105 duration-300 max-[800px]:basis-[100%] max-[1050px]:basis-[48%]">
-        <div class="w-12 h-11 mb-8 flex justify-center items-center">
-          <img class="w-full" src="assets/eye-icon.png" alt="" />
-        </div>
-        <h3 class="text-xl font-headline font-medium mb-3">Wizualizacje</h3>
-        <p class="mb-16 text-sm">
-          Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w
-          technologii 3D.
-        </p>
-        <button class="btn-line">
-          Dowiedz się więcej <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
-        </button>
-      </a>
-
-      <a href="#projects"
-        class="block px-10 py-12 rounded-3xl bg-white hover:shadow-2xl transition hover:scale-105 duration-300 max-[800px]:basis-[100%] max-[1050px]:basis-1/2">
-        <div class="w-12 h-11 mb-8 flex justify-center items-center">
-          <img class="w-full" src="assets/stars-icon.png" alt="" />
-        </div>
-        <h3 class="text-xl font-headline font-medium mb-3">Realizacje</h3>
-        <p class="mb-16 text-sm">
-          Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych
-          technologii.
-        </p>
-        <button class="btn-line">
-          Zobacz nasze realizacje <img class="ml-2" src="assets/stroke-icon.svg" alt="" />
-        </button>
-      </a>
-    </div>
-  </section>
-
-  <!-- ABOUT COMPANY -->
-  <section id="about-company" class="h-[737px] mx-auto bg-green flex items-center">
-    <div class="basis-1/2 h-full bg-[url('assets/about-company.png')] bg-no-repeat bg-cover bg-center"></div>
-    <div class="basis-1/2">
-      <div class="max-w-[596px] mx-auto pl-24 text-white pr-4">
-        <h2 class="text-xs mb-4">O firmie</h2>
-
-        <p class="text-5xl font-headline font-medium italic mb-10">Tworzymy z pasją</p>
-
-        <p class="text-base mb-16">
-          Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci
-          oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta.
-          Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm,
-          geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do
-          współczesnego trybu życia.
-        </p>
-
-        <button class="btn-icon border-white text-white">
-          Poznaj nas bliżej
-          <svg class="ml-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="fill-white" id="Vector"
-              d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" />
-          </svg>
-        </button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="pt-32 bg-beige relative">
-    <div class="max-w-[1262px] mx-auto max-[1400px]:pl-4">
-      <h2 class="text-green text-xs mb-4">Realizacje</h2>
-      <p class="text-5xl italic mb-24 font-headline font-medium">Nasze projekty</p>
-    </div>
-
-    <div id="photos-container" class="photos max-h-[1475px] overflow-hidden">
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/9.png">
-        <img class="w-full" src="assets/projects-photos/9.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/8.png">
-        <img class="w-full" src="assets/projects-photos/8.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/7.png">
-        <img class="w-full" src="assets/projects-photos/7.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/6.png">
-        <img class="w-full" src="assets/projects-photos/6.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/5.png">
-        <img class="w-full" src="assets/projects-photos/5.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/4.png">
-        <img class="w-full" src="assets/projects-photos/4.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/3.png">
-        <img class="w-full" src="assets/projects-photos/3.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/2.png">
-        <img class="w-full" src="assets/projects-photos/2.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/1.png">
-        <img class="w-full" src="assets/projects-photos/1.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/9.png">
-        <img class="w-full" src="assets/projects-photos/9.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/8.png">
-        <img class="w-full" src="assets/projects-photos/8.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/7.png">
-        <img class="w-full" src="assets/projects-photos/7.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/6.png">
-        <img class="w-full" src="assets/projects-photos/6.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/5.png">
-        <img class="w-full" src="assets/projects-photos/5.png" alt="" />
-      </a>
-      <a href="" data-fancybox="photos-gallery" data-src="assets/projects-photos/4.png">
-        <img class="w-full" src="assets/projects-photos/4.png" alt="" />
-      </a>
-    </div>
-
-    <div id="photos-gradient"
-      class="w-full h-[1000px] absolute bottom-0 bg-gradient-to-t from-beige to-transparent pointer-events-none"></div>
-    <button id="expand-btn-photos"
-      class="btn-icon absolute bottom-0 left-1/2 mb-11 border-black text-black -translate-x-1/2">
-      Rozwiń
-      <svg class="fill-black ml-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path id="Vector"
-          d="M16 7.99529L15.1043 7.09959L8.63642 13.5769L8.63642 1.02988e-07L7.36358 8.78099e-08L7.36358 13.5675L0.895699 7.09959L9.54553e-08 7.99529L8.00471 16L16 7.99529Z" />
-      </svg>
-    </button>
-  </section>
-
-  <!-- INSTAGRAM -->
-  <section id="instagram" class="py-[60px] bg-gray">
-    <div
-      class="bg-green px-[110px] py-[120px] text-white max-w-[1040px] mx-auto flex items-center max-[750px]:flex-wrap max-[750px]:px-10">
-      <h3 class="font-headline text-4xl mr-16 mb-4">
-        Zostańmy w kontakcie! Znajdziesz nas na
-        <span class="font-sans font-medium italic">Instagramie</span>.
-      </h3>
-      <div class="basis-[165px] shrink-0">
-        <p class="mb-6">Śledź nasze najnowsze realizacje!</p>
-        <button class="btn-fill bg-gray text-green">Instagram</button>
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-carbon px-52 py-20 text-gray max-[1200px]:px-10">
+      <div class="flex items-center flex-wrap">
+        <img class="mr-6" src="assets/giarddesign-white.svg" alt="" />
+        <p class="ml-auto pr-6">Daj znać, co możemy dla Ciebie zrobić!</p>
+        <button class="btn-fill">Skontaktuj się z nami</button>
       </div>
-    </div>
-  </section>
+      <hr class="my-16 h-[1px]" />
+      <div class="flex justify-between flex-wrap">
+        <ul class="flex flex-wrap">
+          <li class="mr-12">Kontakt</li>
+          <li class="mr-12">Instagram</li>
+          <li class="mr-12">Facebook</li>
+          <li>LinkedIn</li>
+        </ul>
+        <address class="flex not-italic">
+          <p class="mr-12"><a href="tel:000-000-000">000-000-000</a></p>
+          <p><a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a></p>
+        </address>
+      </div>
+      <div class="mt-[120px] flex items-center justify-between flex-wrap">
+        <p>Prawa zastrzeżone © 2022</p>
+        <p class="flex">made by <img class="ml-4" src="assets/adrespect-logo.svg" alt="" /></p>
+      </div>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer id="footer" class="bg-carbon px-52 py-20 text-gray max-[1200px]:px-10">
-    <div class="flex items-center flex-wrap">
-      <img class="mr-auto" src="assets/giarddesign-white.svg" alt="" />
-      <p class="pr-6">Daj znać, co możemy dla Ciebie zrobić!</p>
-      <button class="btn-fill">Skontaktuj się z nami</button>
-    </div>
-    <hr class="my-16 h-[1px]" />
-    <div class="flex justify-between flex-wrap">
-      <ul class="flex flex-wrap">
-        <li class="mr-12">Kontakt</li>
-        <li class="mr-12">Instagram</li>
-        <li class="mr-12">Facebook</li>
-        <li>LinkedIn</li>
-      </ul>
-      <address class="flex not-italic">
-        <p class="mr-12"><a href="tel:000-000-000">000-000-000</a></p>
-        <p><a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a></p>
-      </address>
-    </div>
-    <div class="mt-[120px] flex items-center justify-between">
-      <p>Prawa zastrzeżone © 2022</p>
-      <p class="flex">made by <img class="ml-4" src="assets/adrespect-logo.svg" alt="" /></p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script>
-    // menu dropdown (very basic)
-    const navBtnOffer = document.querySelector("#nav-btn-offer");
-    const navBtnOfferArrow = navBtnOffer.querySelector("img");
-    const offerDropdown = document.querySelector("#offer-dropdown");
+   // menu dropdown (very basic)
+const navBtnOffer = document.querySelector("#nav-btn-offer");
+const navBtnOfferArrow = navBtnOffer.querySelector("img");
+const offerDropdown = document.querySelector("#offer-dropdown");
 
-    navBtnOffer.addEventListener("click", e => {
-      if (offerDropdown.classList.contains("offer-dropdown-active")) {
-        navBtnOfferArrow.classList.remove("nav-btn-offer-arrow-active");
-        offerDropdown.classList.remove("offer-dropdown-active");
-      } else {
-        navBtnOfferArrow.classList.add("nav-btn-offer-arrow-active");
-        offerDropdown.classList.add("offer-dropdown-active");
-      }
-    });
+navBtnOffer.addEventListener("click", e => {
+  if (offerDropdown.classList.contains("offer-dropdown-active")) {
+    navBtnOfferArrow.classList.remove("nav-btn-offer-arrow-active");
+    offerDropdown.classList.remove("offer-dropdown-active");
+  } else {
+    navBtnOfferArrow.classList.add("nav-btn-offer-arrow-active");
+    offerDropdown.classList.add("offer-dropdown-active");
+  }
+});
 
-    // photos
-    // masonry
-    const photosContainer = document.querySelector(".photos");
-    const macy = Macy({
-      container: photosContainer,
-      columns: 3,
-      trueOrder: true,
-      margin: { x: 42, y: 42 },
-    });
+// photos
+// masonry
+const photosContainer = document.querySelector(".photos");
+const macy = Macy({
+  container: photosContainer,
+  columns: 3,
+  trueOrder: true,
+  margin: { x: 42, y: 42 },
 
-    // expand photos
-    const expandBtnPhotos = document.querySelector("#expand-btn-photos");
-    const photosGradient = document.querySelector("#photos-gradient");
-
-    expandBtnPhotos.addEventListener("click", () => {
-      photosContainer.classList.add("photos-container-expanded");
-      expandBtnPhotos.classList.add("hidden");
-      photosGradient.classList.add("hidden");
-    });
-
-    // fancybox
-    Fancybox.bind("[data-fancybox]", {
-      // Your custom options
-    });
-
-    //swiper
-    const swiper = new Swiper(".swiper", {
-      direction: "horizontal",
-      loop: true,
-      speed: 500,
-      autoHeight: true,
-
-      autoplay: {
-        delay: 7000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
+  breakAt: {
+    1000: {
+      margin: {
+        x: 20,
+        y: 20,
       },
-
-      navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
+      columns: 2,
+    },
+    500: {
+      margin: {
+        x: 0,
+        y: 20,
       },
-    });
+      columns: 1,
+    },
+  },
+});
+
+// expand photos
+const expandBtnPhotos = document.querySelector("#expand-btn-photos");
+const photosGradient = document.querySelector("#photos-gradient");
+
+expandBtnPhotos.addEventListener("click", () => {
+  photosContainer.classList.add("photos-container-expanded");
+  expandBtnPhotos.classList.add("hidden");
+  photosGradient.classList.add("hidden");
+});
+
+// fancybox
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
+
+//swiper
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
+  speed: 500,
+  autoHeight: true,
+
+  autoplay: {
+    delay: 7000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+});
 
   </script>
 </body>
