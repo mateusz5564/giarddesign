@@ -21,6 +21,23 @@ const macy = Macy({
   columns: 3,
   trueOrder: true,
   margin: { x: 42, y: 42 },
+
+  breakAt: {
+    1000: {
+      margin: {
+        x: 20,
+        y: 20,
+      },
+      columns: 2,
+    },
+    500: {
+      margin: {
+        x: 0,
+        y: 20,
+      },
+      columns: 1,
+    },
+  },
 });
 
 // expand photos
@@ -43,6 +60,7 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   speed: 500,
+  autoHeight: true,
 
   autoplay: {
     delay: 7000,
