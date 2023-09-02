@@ -646,7 +646,7 @@ video {
 
 .hamburger-menu-active {
   display: block !important;
-  --tw-translate-x: -0px !important;
+  --tw-translate-x: 0px !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
   opacity: 1 !important;
 }
@@ -914,8 +914,8 @@ video {
   flex-basis: 165px;
 }
 
-.\!-translate-x-0 {
-  --tw-translate-x: -0px !important;
+.\!translate-x-0 {
+  --tw-translate-x: 0px !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
@@ -924,13 +924,13 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-y-3 {
-  --tw-translate-y: -0.75rem;
+.-translate-x-full {
+  --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-full {
-  --tw-translate-x: 100%;
+.-translate-y-3 {
+  --tw-translate-y: -0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -979,10 +979,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -1666,13 +1662,6 @@ video {
   }
 }
 
-@media (min-width: 320px) {
-  .min-\[320px\]\:bg-green {
-    --tw-bg-opacity: 1;
-    background-color: rgb(27 91 49 / var(--tw-bg-opacity));
-  }
-}
-
 @media (min-width: 750px) {
   .min-\[750px\]\:hidden {
     display: none;
@@ -1680,20 +1669,6 @@ video {
 }
 
 @media (min-width: 1400px) {
-  .min-\[1400px\]\:bg-green {
-    --tw-bg-opacity: 1;
-    background-color: rgb(27 91 49 / var(--tw-bg-opacity));
-  }
-
-  .min-\[1400px\]\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .min-\[1400px\]\:opacity-0 {
-    opacity: 0;
-  }
-
   .min-\[1400px\]\:focus-within\:px-0:focus-within {
     padding-left: 0px;
     padding-right: 0px;
