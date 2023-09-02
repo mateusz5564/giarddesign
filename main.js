@@ -13,6 +13,20 @@ navBtnOffer.addEventListener("click", e => {
   }
 });
 
+// mobile menu
+const hamburgerBtn = document.querySelector("#hamburger-btn");
+const hamburgerMenu = document.querySelector("#hamburger-menu");
+
+hamburgerBtn.addEventListener("click", () => {
+  if (hamburgerBtn.classList.contains("hamburger-btn-active")) {
+    hamburgerBtn.classList.remove("hamburger-btn-active");
+    hamburgerMenu.classList.remove("hamburger-menu-active");
+  } else {
+    hamburgerBtn.classList.add("hamburger-btn-active");
+    hamburgerMenu.classList.add("hamburger-menu-active");
+  }
+});
+
 // photos
 // masonry
 const photosContainer = document.querySelector(".photos");
