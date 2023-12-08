@@ -9,6 +9,7 @@ I had to come up with the design for smaller screens on my own. I made this page
 - Tailwind CSS
 - Swiper
 - FancyBox
+- Macy
 
 ## Figma design
 <p align="center">
